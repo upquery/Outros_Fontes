@@ -1,0 +1,61 @@
+:root {
+  --main-bg-color: #EE0000;
+}
+
+body { width: 100%; font-family: "montserrat"; position: absolute !important; padding-top: 20px; }
+div#avaliacao { margin: 0 auto; max-width: 1280px; }
+div#background { z-index: -1; background-image: url('dwu.fcl.download?arquivo=bg_sac.png'); background-position: center; background-size: auto 50%; opacity: 0.04; height: 100%; width: 100%; position: fixed; }
+div#avaliacao input#senha { width: calc(100% - 20px) !important; max-width: 100% !important; -webkit-text-security: disc; }
+div#avaliacao a { color: #000; text-decoration: none; cursor: pointer; font-weight: bold;}
+div#avaliacao a.concluir { display: block; width: calc(100% - 8px); text-align: center; background: #065182CC; height: 30px; line-height: 30px; color: #EFEFEF; border-radius: 3px; box-shadow: 1px 1px 2px 0px #000; margin: 25px auto 25px auto; }
+div#avaliacao a.concluir:hover { color: #FFF; }
+div#avaliacao big { display: inline; float: left; width: 100%; margin: 0 0 3px 6px;}
+div#avaliacao a:hover { color: #CC0000; }
+div#form_avaliacao { max-width: 500px; margin: 0 auto; }
+div#avaliacao .invisivel { border: none !important; display: inline !important; float: left !important; width: 100% !important; height: 0 !important; overflow: hidden !important; opacity: 0 !important; margin: 0 !important; }
+div#avaliacao .acessar { display: inline; float: left; font-size: 15px; font-weight: bold; margin-left: 10px; }
+div#avaliacao .linha { display: block; margin: 10px 0; height: 32px; line-height: 32px; }
+div#avaliacao #completo { text-align: center; font-weight: bold; color: #CC0000; }
+div#avaliacao .concluido { display: inline !important; height: 32px !important; opacity: 1 !important; }
+div#avaliacao #erro { display: inline; float: left; color: #CC0000; }
+input, div#avaliacao #perguntas li select { height: 24px !important; }
+div#avaliacao textarea { resize: none; width: 97%; margin-bottom: 15px; }
+div#avaliacao h1 { text-align: center; font-weight: bold; font-size: 30px; margin: 70px 0 26px 0; }
+div#avaliacao h2 { font-size: 18px; text-align: left; margin: 10px 0 20px 0; font-family: "montserrat"; }
+div#avaliacao h2.grupo_desc { font-style: italic; font-size: 20px; }
+div#avaliacao #login { line-height: 22px; max-width: 460px; margin: 30px auto; display: block; height: 22px; }
+div#avaliacao small.msg { line-height: 12px; font-size: 10px; color: #CC0000; height: 12px; opacity: 1; display: inline; float: left; width: 100%; margin: 5px 0 0 10px; }
+div#avaliacao #login input { border: 1px solid #666; display: block; width: calc(100% - 14px); font-weight: normal; padding: 0 2px; margin: 0 auto; }
+div#avaliacao #avaliacao { width: 720px; max-width: 100%; background: #FFF; box-shadow: 1px 1px 3px 2px #000; display: inline-block; *border: 1px solid #000; text-align: left; }
+div#avaliacao @media \0screen { #avaliacao { border-bottom: 1px solid #000; border-right: 1px solid #000; border-left: 1px solid #000; }}
+div#avaliacao div#conteudo { display: inline; float: left; width: 100%; }
+div#avaliacao div.linha select { width: 245px; display: inline; float: right; text-align: center; }
+div#avaliacao #perguntas { padding: 4px 0; }
+div#avaliacao #perguntas li { margin: 14px 0; transition: all 0.5s linear; padding: 2px 0 2px 10px; border: 1px solid #FFF; border-radius: 3px; }
+div#avaliacao #perguntas li:nth-child(even) { background: #FFFFFF; }
+div#avaliacao #perguntas li:nth-child(odd) { background: #EEEEEE; }
+div#avaliacao #perguntas li:hover { border: 1px solid #444; }
+div#avaliacao #perguntas li form { margin: 10px 0 15px 0; }
+div#avaliacao #perguntas li form input { cursor: pointer; height: 12px !important; width: 8px; }
+div#avaliacao #perguntas li form label { padding: 0 2px 0 2px; margin-right: 2px; cursor: pointer; }
+div#avaliacao #perguntas li select { width: 100px; max-width: 100px; }
+div#edit-bar { bottom: 0; position: fixed; height: 24px; width: 100%; transition: height 0.2s linear 0.2s; }
+div#edit-bar:hover { height: 132px;}
+a#exclusao { background: #FFF; padding: 5px; float: right; border-top: 2px solid #333; font-size: 12px; font-weight: bold; }
+a#cadastro { background: #FFF; padding: 5px; border-radius: 3px 0 0 0; float: right; border-left: 2px solid #333; border-top: 2px solid #333; border-right: 2px solid #333; font-size: 12px; font-weight: bold; }
+div#edit-form { border-top: 2px solid #555; background: #FFF; padding: 0 10px; width: 100%; float: left; height: 106px; }
+div#edit-form input#pergunta { width: 400px; border-radius: 3px; border: 1px solid #555; padding: 3px; margin: 2px 10px 10px 2px; max-width: 400px; }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none;margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+div#logo { position: absolute; left: 0; width: 170px; top: 0;  }
+div#logo img { width: 100%; height: 100%; border-right: 2px solid #999; border-bottom: 2px solid #999; border-radius: 1px; }
+
+@media all and (max-device-width: 500px) {
+    div#logo { width: 100%;  background-color: #00C6F6; height: auto; }
+    div#logo img { max-width: 200px; border-right: 0 !important; margin: 0 auto; display: block; border: 0 !important; opacity: 0.9; }
+    div#avaliacao { margin: 180px auto 40px auto !important;  }
+    div#avaliacao h1 { display: none !important; }
+    div#avaliacao #login { max-width: 100%; margin: 10px auto; }
+    div#conteudo div { font-size: 14px !important; line-height: 24px !important; }
+    a#button-login { width: 100% !important; border: 0 !important; box-shadow: none !important; margin: 30px 0 !important; bottom: 0 !important; position: relative !important; border-radius: 0 !important; font-size: 18px !important; height: 44px !important; line-height: 44px !important; }
+}

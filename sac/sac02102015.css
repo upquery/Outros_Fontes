@@ -1,0 +1,27 @@
+div#avaliacao a { color: #000; text-decoration: none; cursor: pointer; font-weight: bold;}
+div#avaliacao a.concluir { display: block; width: calc(100% - 8px); text-align: center; background: #065182; height: 25px; line-height: 25px; color: #FFF; border-radius: 3px; box-shadow: 1px 1px 2px 0px #000; margin: 15px 0; }
+div#avaliacao a.concluir:hover { color: #FFF; }
+div#avaliacao big { display: inline; float: left; width: 100%; margin: 0 0 3px 6px;}
+div#avaliacao a:hover { color: #CC0000; }
+div#avaliacao .invisivel { border: none !important; display: inline !important; float: left !important; width: 100% !important; height: 0 !important; overflow: hidden !important; opacity: 0 !important; margin: 0 !important; }
+div#avaliacao .acessar { display: inline; float: left; font-size: 15px; font-weight: bold; margin-left: 10px; }
+div#avaliacao .linha { display: block; margin: 10px 116px; }
+div#avaliacao #completo { text-align: center; font-weight: bold; color: #CC0000; }
+div#avaliacao #erro { display: inline; float: left; color: #CC0000;}
+div#avaliacao textarea { resize: none; width: 97%; margin-bottom: 15px; }
+div#avaliacao h1 { text-align: center; font-weight: bold; font-size: 30px; margin: 14px 0 6px 0;}
+div#avaliacao #login { line-height: 22px; max-width: 354px; margin: 10px auto; display: block; height: 22px; }
+div#avaliacao small.msg {line-height: 12px; font-size: 10px; color: #CC0000; height: 12px; opacity: 1; display: inline; float: left; width: 100%; margin: 5px 0 0 10px;}
+div#avaliacao #login input { border: 1px solid #666; display: block; width: calc(100% - 14px); font-weight: normal; padding: 0 2px; }
+div#avaliacao #avaliacao { width: 720px; max-width: 100%; background: #FFF; box-shadow: 1px 1px 3px 2px #000; display: inline-block; *border: 1px solid #000; text-align: left;}
+div#avaliacao @media \0screen { #avaliacao { border-bottom: 1px solid #000; border-right: 1px solid #000; border-left: 1px solid #000; }}
+div#avaliacao div#conteudo { display: inline; float: left; width: 100%; }
+div#avaliacao div.linha select { width: 245px; display: inline; float: right; text-align: center; }
+div#avaliacao #perguntas { padding: 4px 0; }
+div#avaliacao #perguntas li { margin: 14px 0; transition: all 0.5s linear; padding: 2px 0 2px 10px; border: 1px solid #FFF; }
+div#avaliacao #perguntas li:nth-child(even) { background: #FFFFFF; }
+div#avaliacao #perguntas li:nth-child(odd) { background: #EEEEEE; }
+div#avaliacao #perguntas li:hover { border-top: 1px solid #444; border-bottom: 1px solid #444; }
+div#avaliacao #perguntas li form { margin: 10px 0 15px 0; }
+div#avaliacao #perguntas li form input { cursor: pointer; }
+div#avaliacao #perguntas li form label { padding: 0 4px; margin-right: 6px; cursor: pointer; }

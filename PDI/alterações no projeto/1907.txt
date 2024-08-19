@@ -1,0 +1,11 @@
+ REUNIÃO 19/07
+
+ - Email ser disparado de dentro da useall(fabiano) - ok
+
+ - Recarregar tela de interligação ao editar/excluir - ok
+
+ - Campo de hierarquia(1 - diretor, 2 - gerente, 3 - coordenador, 4 - colaborador) - ok
+
+ - Relatório de usuários e email
+
+ - Separar avaliação por período

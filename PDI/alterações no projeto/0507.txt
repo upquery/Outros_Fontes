@@ -1,0 +1,9 @@
+- reaproveitar a pergunta para outro setor
+
+- autoavaliação - ok
+
+- justifica não obrigatória - ok
+
+- novo campo para distinguir texto inicial(Tipos: Autoavaliação,  Avaliação do Superior e Avaliação dos Subordinados)
+
+- Alteração de nomes dos campos do tema(Deveria ser: Tema, Descrição e Observação)
