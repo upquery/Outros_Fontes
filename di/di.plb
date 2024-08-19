@@ -1,0 +1,74 @@
+set scan off
+create or replace package di wrapped 
+a000000
+b2
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+9
+199 150
+3lhih1M9a6mt6j5vp4vPS5Oj8+IwgzLI2SdqfC/pmPCd4J+na44GZxwqTOfeBuNX738cY9fy
+E0iStnMz8ssqMt4Nq9tuEtG2oK0eHO5zHWhUO+VccCBQYGBTEYBMOntgZQZ6+/Huui9pqL28
+vanvqQrJxyVo390W971UnZ/ZGg7NFopND8gilygj3sJXE8BoTIkHMQjwc9PulKF6FufPWKI/
+GUf3gKRb+xhqpVSvmiAGcc5bmJyK64gg659IGt/NSJj2pkEPypdpgyKIAPLTD8lcICgeaj+a
+SPx0H+iuOqv6bjArTTJefZID0Qhab9geHLymP6M4vQ==
+
+/
+create or replace package body di wrapped 
+a000000
+b2
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+b
+af3 621
+izFcBm6oioUsWgAckpzY90v86hMwg+0rTF6MWo5V6k7VuZtLFAo2gtzNTfMK56BA8aYd8Equ
+jjccatzTVCWzkdksnVXPoWVFCpYM3gJobhKSGcdIeFfln4yH7wQxkgDbvQSHsMePU2FA9Zrp
+fMyymcNkx1CtV1NO4dczYnSnJIiov1Q2gH2DS7RJ+P0LsLv1lW0PMrpq/susiExHrwiA6Gs3
+yvqbVfQb2Xs87gUErlkE0tCvjELTzJNgp6YVXyWKcadPQUGSrklzIarILdUgV9mpsFzEJeWF
+KcYhb9GVGUsNwC2PyX8P4onqhTkXFxdsB901wU64Og7niI3ovqbNlpT2Ndpg5UjahcXhW+rs
+Mb/PdjDs9ldT1dShRHnyVC+r4Q+6Zqo7t4Dpzhs65RpjbVYa+vXcNuMlbGwM5ec5CVrkZ0pR
+k0HR42UvZ7zkrns7R6el3/bHzMJrZSB557NWR+pGxfaSTHsQ8Lb9tKKcPzMyLpticNNMhQER
+LFeupyTKScfp5wN+3BTs4oxYiUvpRFRsqrbpBHQiILSdpgNuz+o2CDox6VdTXFXifZjJuHlx
+QuC7OpNZwnzLMOAkuiLnJGIhNVQCf9RKRryS1DtmV0LOS+dEUH6Z75nVFWWNUXzs979dUS6n
+XZE98qc5IBqT/DY912Il3hUiQYXD4Ptho29vnypWutS+JIjs3hJN9LgZ3qsg9o5LChj2QvGz
+fCQHbZFYOz4ULWZ8hucTepduVrKOPzPlAhkUw3BIRlJFbiCT5rzJPTt9n//CT/F1///uTghS
+YYi8oV7iIUxel6TPdMH2FQowWeYrYEVfi6HS1voIF1MpGOCnluGHw+XjBjhuYB5ECsS1Zxbs
+tj/ag6t/1pQu4+BkD1CkGAYg6eDxY56TYDT2zHrhQAtDgrRpMOlubd7/1MNJCn1ijRoW8PpK
+wyweNG9LBjFeCKqxChaGMrPgwkmj8BDM4gBIwPYZ7AQkW5cEwtIG55b//NWaJUs4uqlW1+2/
+fPWQpowgBKmQCN3fO98rVa4AcLq0v2K4Pdr5IaZ9uApHnqNxKmESmynZLA8juOJnoSrYSz2e
+WlvcXq/O0EOGrNZ2XP5L9lSxVfFF6ov8jPQftIzVmuvDh36peQU0f7gPgIeVgypWnzmExz6c
+jwuCcJmBKj1qVtaasaCApDDBMta5BQ+IzTLd4LtJEUXL9Y2Q0V8OY6I9D2xIHlscFyKyDGP9
+t/V3dduQFnrgePAADVvaHFyhcf4A0J+VtXiN1UryATyizN2AAeRTIy7NYoHsBAqdYk/ZGxcl
+Vb/t3r6QMNv8cANvEQvExNWB2brcgm3auhWLhDPCYoN7+Kc3ABGHRoMlq+pwZh6r0NXlHFl+
+pNzu00r70PdcKczHSzvWTItCv3ihIs2vqHRAlEXiGGtMK34CeydUPwfrcyJt3JMqIIFfSDFe
+10DRmS6e3/gBGvX1Y5IbqrOC13h0VsJ0wfAahwj/hZYR9Os+d95llC8egKK6WJsECv4jXkxk
+9XLSUMviQTwQcesSVfk1B8b1C87ZJNGwMVk=
+
+/
+show error
+exit

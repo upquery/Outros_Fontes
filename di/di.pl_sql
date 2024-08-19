@@ -1,0 +1,45 @@
+set scan off
+
+-- >>>>>>>-------------------------------------------------------------
+-- >>>>>>> Aplicação: Avaliação Interna
+-- >>>>>>> Por:		Upquery Tec
+-- >>>>>>> Data:	18/04/12
+-- >>>>>>> Pacote:	D.I (Double input)
+-- >>>>>>>-------------------------------------------------------------
+
+create or replace package di is
+	
+	procedure main;
+	
+end di;
+/
+
+create or replace package body di is
+
+	procedure main as
+	
+		ws_count number;
+	
+		begin
+		htp.p('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">');
+		htp.p('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">');
+			htp.headOpen;
+				htp.p('<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />');
+				htp.p('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />');
+				htp.p('<TITLE>UpQuery Tec</TITLE>');
+				htp.p('<link rel="apple-touch-icon" size="114x114" href="'||ret_var('URL_GIFS')||'ipad_icon.png">');
+				htp.p('<META HTTP-EQUIV="Pragma" CONTENT="no-cache">');
+				htp.p('<META HTTP-EQUIV="Expires" CONTENT="-1">');
+				htp.p('<META NAME="apple-mobile-web-app-capable" CONTENT="yes">');
+				fcl.put_script('di');
+			htp.headClose;
+			htp.p('<body>');
+			
+			htp.p('</body>');
+		htp.p('</html>');
+	end main;
+	
+end di;
+/
+show error
+exit
