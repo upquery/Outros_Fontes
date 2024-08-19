@@ -1,0 +1,113 @@
+--  Procedure Converter ( PRM_VERSAO VARCHAR2 DEFAULT NULL ) As
+
+--   Cursor Crs_Seq Is
+--           Select Sequencia,      Dt_Geracao,
+--                  Versao_Sistema, Tipo,
+--                  Nm_Conteudo,    Conteudo,
+--                  Backup_Script,  Reverse_Script
+--           From   Script_Atualizacao
+--           Where Versao_Sistema=Prm_Versao
+--           ORDER BY SEQUENCIA;
+
+--    ws_SEQ     crs_SEQ%rowtype;
+
+--    x long;
+--    Y Blob;
+--	ws_sequencia number := 0;
+--begin
+
+--    Open Crs_Seq;
+
+--    Loop
+--      Fetch Crs_SEQ Into Ws_SEQ;
+--      Exit When Crs_Seq%Notfound;
+
+--	  ws_sequencia := ws_sequencia+1;
+
+--      If  Ws_Seq.Tipo In ('PROCEDURE','PACKAGE_SPEC','PACKAGE_BODY','FUNCTION') Then
+--		  Insert Into Upgrade_System Values (ws_sequencia, Sysdate, '1', Ws_Seq.Nm_Conteudo, Ws_Seq.Tipo, fun.C2b(Dbms_Metadata.Get_Ddl(Ws_Seq.Tipo, Ws_Seq.Nm_Conteudo, 'DWU')),'','','','','','','','');
+--          commit;
+--      end if;
+
+--      If  Ws_Seq.Tipo='JAVA_SCRIPT' Then
+--		  for i in (select script from java_script) loop
+--		      Insert Into Upgrade_System Values (ws_sequencia, Sysdate, '1', ws_seq.nm_conteudo, ws_seq.tipo, fun.C2b(i.script),'','','','','','','','');
+--              ws_sequencia := ws_sequencia+1;
+--		  end loop;
+--		  commit;
+--      End If;
+
+--      If  Ws_Seq.Tipo='CSS_STYLE' Then
+--		  Select Style into x
+--          From Css_Style
+--          Where Cd_Style=Ws_Seq.Nm_Conteudo;
+--          Y :=To_Blob(Utl_Raw.Cast_To_Raw(X));
+--          for i in (select style from css_style) loop
+--              Insert Into Upgrade_System Values (ws_sequencia, Sysdate, '1', ws_seq.nm_conteudo, ws_seq.tipo, To_Blob(Utl_Raw.Cast_To_Raw(i.style)), '','','','','','','','');
+--              ws_sequencia := ws_sequencia+1;
+--		  end loop;
+--		  commit;
+--      End If;
+
+--      If  Ws_Seq.Tipo='SCRIPT' Then
+--		  Insert Into Upgrade_System Values (ws_sequencia, Sysdate, '1', ws_seq.nm_conteudo, ws_seq.tipo, fun.C2B(ws_seq.CONTEUDO),'','','','','','',ws_seq.BACKUP_SCRIPT,ws_seq.REVERSE_SCRIPT);
+--          commit;
+--      End If;
+
+--      If  Ws_Seq.Tipo='DOCUMENTO' Then
+--          Insert Into Upgrade_System
+--                 Select ws_sequencia, Sysdate, '1', Ws_Seq.Nm_Conteudo, Ws_Seq.Tipo,Blob_Content,Name,Mime_Type,Doc_Size,Dad_Charset,Last_Updated,Content_Type,'',''
+--                from tab_documentos where name=ws_seq.nm_conteudo;
+--          commit;
+--      End If;
+
+--    End Loop;
+
+-- Close Crs_SEQ;
+
+--END CONVERTER;
+
+--procedure autocomplete ( prm_key varchar2 default null,
+--                         prm_action char default 'A' ) as
+
+--	ws_count number;
+--	ws_total number;
+--	ws_min number;
+--begin
+--    A = Add, * = Call
+--    if prm_action = 'A' then
+--	    select count(*) into ws_total from autocomplete where usuario = user;
+--		if ws_total < 10 then
+--		    select count(*) into ws_count from autocomplete where key = prm_key and usuario = user;
+--			if ws_count <> 0 then
+--			    update autocomplete
+--				set used = (select used from autocomplete where key = prm_key and usuario = user)+1
+--				where key = prm_key and usuario = user;
+--			else
+--		        insert into autocomplete values(prm_key, user, 1);
+--			end if;
+--		else
+--		    select count(*) into ws_count from autocomplete where key = prm_key and usuario = user;
+--			if ws_count <> 0 then
+--			    update autocomplete
+--				set used = (select used from autocomplete where key = prm_key and usuario = user)+1
+--				where key = prm_key and usuario = user;
+--			else
+--				update autocomplete
+--				set used = (select used from autocomplete where used = (select min(used) from autocomplete where usuario = user) and usuario = user and rownum = 1)-1
+--				where key = (select key from autocomplete where used = (select min(used) from autocomplete where usuario = user) and usuario = user and rownum = 1);
+--				select used into ws_min from autocomplete where used = (select min(used) from autocomplete where usuario = user) and usuario = user and rownum = 1;
+--				if ws_min <= 1 then
+--					delete from autocomplete where key = (select key from autocomplete where used = (select min(used) from autocomplete where usuario = user) and usuario = user and rownum = 1);
+--					insert into autocomplete values(prm_key, user, 1);
+--				end if;
+--		    end if;
+--		end if;
+--	else
+--	    onclick="if(!document.getElementById('data').children[0]){ ajax('list', 'dwu.fcl.autocomplete', 'prm_key=&prm_action=C', false, 'data')}"
+--	    for i in(select key from autocomplete where usuario = user order by used desc) loop
+--	        htp.p('<option value="'||i.key||'">');
+--		end loop;
+--	end if;
+
+--end autocomplete;
